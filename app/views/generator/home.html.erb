@@ -1,1 +1,5 @@
-<%# 'Isto é um comentário' %>
+<%= form_with url: "/transform", method: :get do |form| %>
+  <%= form.label :value, "Search for:" %>
+  <%= form.text_field :value %>
+  <%= form.submit "Search" %>
+<% end %>
