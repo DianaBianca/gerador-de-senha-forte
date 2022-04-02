@@ -1,5 +1,12 @@
-<%= form_with url: "/transform", method: :get do |form| %>
-  <%= form.label :value, "Search for:" %>
+<div>
+
+<h1>Fortificador de Senha</h1>
+<h3>Transforme sua senha simples em uma senha forte</h3>
+
+<%= form_with url: "/show", method: :get do |form| %>
+  <%= form.label :value, "Senha:" %>
   <%= form.text_field :value %>
-  <%= form.submit "Search" %>
+  <%= form.submit "Melhorar" %>
 <% end %>
+
+</div>

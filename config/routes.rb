@@ -3,5 +3,5 @@
 Rails.application.routes.draw do
   root 'generator#home'
 
-  get '/transform' => 'generator#transform'
+  get '/show' => 'generator#show'
 end
